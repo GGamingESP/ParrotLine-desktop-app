@@ -1,7 +1,10 @@
 // COMPONENTES
 import { RxDownload, RxGithubLogo } from "react-icons/rx";
+<<<<<<< HEAD
 
 // IMAGENES
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import logoImage from '../images/loro.webp'
 
 function Footer() {

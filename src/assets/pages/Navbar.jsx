@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 // IMAGENES
 import logoImage from '../images/loro.webp'
 
 // ICONOS
+=======
+import { useState } from 'react';
+import logoImage from '../images/loro.webp'
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import { RxDownload } from 'react-icons/rx'
 
 function Navbar() {
@@ -56,6 +61,7 @@ function Navbar() {
                     </ul>
                 </div>
 
+<<<<<<< HEAD
                 {/* DESCARGA */}
 
                 <div className="navbar-end flex gap-4">
@@ -65,6 +71,14 @@ function Navbar() {
                             <RxDownload size={27} />
                         </button>
                     </a>
+=======
+                <div className="navbar-end flex gap-4">
+                    <button className="btn border-none  hover:bg-[#398c73] hover:scale-[103%] transition-all text-xl bg-[#41a184] text-white">
+                        Download
+                        <RxDownload size={27} />
+                    </button>
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
                 </div>
 
             </div>

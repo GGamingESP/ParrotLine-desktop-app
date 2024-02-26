@@ -1,6 +1,9 @@
 // IMPORT REACT
 import { useEffect, useState, useRef, useContext } from "react";
+<<<<<<< HEAD
 // ICONOS
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import { FaEllipsisV, FaPaperPlane, FaTimes } from "react-icons/fa";
 import { IoReload } from "react-icons/io5";
 import { FcAddImage } from "react-icons/fc";
@@ -132,7 +135,11 @@ function ChatMessages() {
       });
     }
   };
+<<<<<<< HEAD
   // FUNCION ELIMINAR MENSAJES
+=======
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   const blockUser = (id) => {
     if(confirm("Estas seguro de que quieres bloquear a el usuario")){
       axios.get(`https://ivan.informaticamajada.es/api/blockFriend/${id}`,{
@@ -146,7 +153,11 @@ function ChatMessages() {
       })
     }
   }
+<<<<<<< HEAD
   // FUNCION ENVIAR MENSAJES CON ARCHIVOS / IMAGENES
+=======
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   const sendMessageWithImage = () => {
     console.log(selectedFile)
     let imagen = new FormData();
@@ -241,10 +252,21 @@ function ChatMessages() {
     // Longitud de "public/"
     const publicLength = 7;
 
+<<<<<<< HEAD
     // Corta la cadena desde el índice publicLength
     return str.slice(publicLength);
   }
   // FUNCION PARA SALIR DEL GRUPO
+=======
+  function quitarPublic(str) {
+    // Longitud de "public/"
+    const publicLength = 7;
+
+    // Corta la cadena desde el índice publicLength
+    return str.slice(publicLength);
+  }
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   const leaveGroup = () => {
     // Aquí envías una solicitud al servidor para salir del grupo
     if(confirm("Estas seguro de que quieres salirte del grupo")){

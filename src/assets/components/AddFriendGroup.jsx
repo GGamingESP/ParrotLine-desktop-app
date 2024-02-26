@@ -9,7 +9,10 @@ import {
   FaUserPlus,
   FaCheck,
 } from "react-icons/fa";
+<<<<<<< HEAD
 // IMPORTS NECESIDADES
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import { Form } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -132,7 +135,10 @@ function InviteGroupModal() {
   );
 }
 
+<<<<<<< HEAD
 // MODAL AMIGOS
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 function FriendModal() {
   const user = JSON.parse(sessionStorage.getItem("currentUser"));
   const [friendRequest, SetRequest] = useState([]);

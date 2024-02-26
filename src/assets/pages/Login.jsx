@@ -1,16 +1,36 @@
+<<<<<<< HEAD
 
 // COMPONENETES
+=======
+import parrot3 from '../images/parrot3.webp';
+import parrot4 from '../images/parrot4.webp'
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Login_url } from '../../data/data';
 import { useEffect } from 'react';
 
+<<<<<<< HEAD
 // IMAGENES
 import parrot3 from '../images/parrot3.webp';
 import parrot4 from '../images/parrot4.webp'
 
 function Login() {
+=======
+
+function Login() {
+
+    useEffect(() => {
+        const user = JSON.parse(sessionStorage.getItem("currentUser"));
+        if (user) {
+            window.location.href = "/web";
+        }
+    });
+
+    const handleSignIn = (event) => {
+        event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 
     // si se a logeado previamente lo manda a /web
     useEffect(() => {
@@ -38,9 +58,15 @@ function Login() {
             email: email,
             password: password
         }).then(function (response) {
+<<<<<<< HEAD
             toast.success('Inicio de sesión exitoso', { autoClose: 900 },); // Mensaje de éxito durante 900 ms
             setTimeout(() => {
                 window.location.href = '/Web'; // Redirige a la página deseada después de los 900ms
+=======
+            toast.success('Inicio de sesión exitoso', { autoClose: 900 },); // Mensaje de éxito durante 3 segundos
+            setTimeout(() => {
+                window.location.href = '/Web'; // Redirige a la página deseada después de 3 segundos
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
             }, 1550);
             console.log(response.data.data)
             let currentUser = {

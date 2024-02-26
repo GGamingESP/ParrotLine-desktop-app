@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 
 // COMPONENTES
+=======
+import parrot3 from '../images/parrot3.webp'
+import parrot4 from '../images/parrot4.webp'
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 // IMPORTS REACT
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import { useState, useEffect } from "react";
 // LOGOS
 import { FaCog, FaUserCircle, FaPen, FaPaintBrush, FaSignOutAlt } from "react-icons/fa";
+<<<<<<< HEAD
 // IMPORTS NECESIDADES
 import axios from "axios";
 // FUNCION PRINCIPAL
+=======
+import axios from "axios";
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 function UserProfile() {
   // ESTADOS
   const [isHovered, setHovered] = useState(false);
@@ -40,11 +48,26 @@ function UserProfile() {
     // Longitud de "public/"
     const publicLength = 7;
 
+<<<<<<< HEAD
     // Corta la cadena desde el índice publicLength
     return str.slice(publicLength);
   }
 
   // FUNCION CAMBIAR FOTO DEL USUARIO
+=======
+  function quitarPublic(str) {
+    // Longitud de "public/"
+    const publicLength = 7;
+
+    // Corta la cadena desde el índice publicLength
+    return str.slice(publicLength);
+  }
+
+  const handleSaveChanges = () => {
+    setEditMode(false);
+  };
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   const handleImageChange = () => {
     // Verificar el tamaño del archivo y otras validaciones...
     // 2 megabytes
@@ -74,6 +97,39 @@ function UserProfile() {
       .catch((error) => {
         console.error("Error al subir la imagen:", error);
       });
+<<<<<<< HEAD
+=======
+  };
+
+  const handleUpdateName = () => {
+    // Realizar la solicitud al servidor para actualizar el nombre de usuario
+    const user = JSON.parse(sessionStorage.getItem("currentUser"));
+    const token = user.token;
+
+    axios
+      .put(
+        `https://ivan.informaticamajada.es/api/user/${user.user.id}`,
+        { name: editedName, description: user.user.description },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      )
+      .then((response) => {
+        // Manejar la respuesta del servidor
+        console.log("Nombre de usuario actualizado correctamente:", response.data);
+        // Actualizar el nombre de usuario localmente
+        setName(editedName);
+        // Finalizar el modo de edición
+        setNameEditMode(false);
+      })
+      .catch((error) => {
+        console.error("Error al actualizar el nombre de usuario:", error);
+        // Aquí puedes manejar el error de acuerdo a tus necesidades
+      });
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   };
 
   // FUNCION CAMBIAR NOMBRE DEL USUARIO
@@ -148,7 +204,10 @@ function UserProfile() {
     window.location.href = "/Login";
   };
 
+<<<<<<< HEAD
   // VALORES DEL USUARIO
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   const user = JSON.parse(sessionStorage.getItem("currentUser"));
 
   useEffect(() => {
@@ -160,6 +219,9 @@ function UserProfile() {
     }
   }, []);
 
+  const handleImageClick = () => {
+    document.getElementById("subida").click();
+  };
 
   return (
     <div className="flex items-center mb-4">

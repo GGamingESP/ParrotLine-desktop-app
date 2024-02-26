@@ -2,6 +2,7 @@
 import { useEffect, useState, useContext } from 'react';
 // IMPORT NECESIDADES
 import axios from 'axios';
+<<<<<<< HEAD
 // LOGO
 import logoImage from '../images/loro.webp';
 // CONTEXTO
@@ -9,6 +10,13 @@ import MyCurrentGroupContext from '../components/CurrentGroupContext';
 // FUNCION PRINCIPAL
 function UserChannels({ userGroup, currentGroup }) {
   // ESTADOS
+=======
+import logoImage from '../images/loro.webp';
+
+import MyCurrentGroupContext from '../components/CurrentGroupContext';
+
+function UserChannels({ userGroup, currentGroup }) {
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   const [userGroups, setUserGroups] = useState([]);
   const [grouphtml, setgrouphtml] = useState([]);
   const misGrupos = useContext(MyCurrentGroupContext);
@@ -19,7 +27,11 @@ function UserChannels({ userGroup, currentGroup }) {
     console.log(group);
     currentGroup(group);
   };
+<<<<<<< HEAD
   // USEEFFECT PARA CONSEGUIR TODOS LOS GRUPOS
+=======
+
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
   useEffect(() => {
     // Realizar la solicitud al servidor para obtener los grupos del usuario
     axios.get('https://ivan.informaticamajada.es/api/allGroups', {

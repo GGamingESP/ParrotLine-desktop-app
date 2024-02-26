@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 // IMAGENES
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 import Parrot5 from './assets/images/parrot5.webp';
 import lorito from './assets/images/lorito.webp';
 import movil from './assets/images/movil.webp';

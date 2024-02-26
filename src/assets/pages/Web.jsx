@@ -18,8 +18,12 @@ function Web() {
     const MyCurrentGroupProvider = MyCurrentGroupContext.Provider;
     const [MyGroups, setMyGroups] = useState([])
     const [CurrentGroup, setCurrentGroup] = useState({})
+<<<<<<< HEAD
 
     // Logica rederigirte a /login si entras a /web sin logearte previamente
+=======
+     const [searchTerm, setSearchTerm] = useState("");
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
     useEffect(() => {
         const user = JSON.parse(sessionStorage.getItem("currentUser"));
         if (user) {
@@ -48,7 +52,11 @@ function Web() {
                         <UserProfile />
 
                         {/* Botón de búsqueda */}
+<<<<<<< HEAD
                         <SearchBar/>
+=======
+                        <SearchBar setSearchTerm={setSearchTerm} />
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 
                         {/* Iconos de "Agregar amigo" y "Crear grupo" */}
                         <AddFriendGroup />

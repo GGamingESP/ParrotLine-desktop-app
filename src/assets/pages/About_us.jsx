@@ -2,10 +2,13 @@
 // COMPONENTES
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+<<<<<<< HEAD
 
 // ICONOS
 import { FaLaptopCode, FaServer, FaLightbulb, FaUsers, FaChartBar } from "react-icons/fa";
 
+=======
+>>>>>>> 3d222ab55d74f6ab4dc362d5d0484d0f8896f3f8
 function AboutUs() {
     return (
         <>
